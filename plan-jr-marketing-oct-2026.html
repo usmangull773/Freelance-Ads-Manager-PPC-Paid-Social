@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30 Day Plan for J&amp;R Marketing</title>
+<style>
+  :root{
+    --navy:#0b1f36; --card:#12355b; --blue:#0f4c81; --gold:#c8a24a; --gold-l:#e3c77f;
+    --bg:#e9eff6; --white:#ffffff; --red:#b3261e; --green:#1f6f43; --ink:#16212e; --muted:#5a6878;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  section{padding:64px 0}
+  h1,h2,h3{line-height:1.25}
+  strong{font-weight:700}
+  .hl{background:rgba(200,162,74,.22);padding:0 4px;border-radius:3px;font-weight:700}
+
+  /* hero */
+  .hero{background:var(--navy);color:#fff;border-bottom:5px solid var(--gold);padding:28px 0 56px}
+  .topbar{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:#b9c7d8;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:16px;margin-bottom:44px}
+  .topbar b{color:#fff;font-weight:600}
+  .label{display:inline-block;color:var(--gold-l);font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+  .hero h1{font-size:44px;font-weight:800;margin-bottom:16px}
+  .hero .lead{font-size:20px;color:#d6e0ec;max-width:760px}
+  .hero .lead span{color:var(--gold-l);font-weight:700}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin:26px 0 36px;font-size:14px;color:#b9c7d8}
+  .meta b{color:#fff;font-weight:600}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .kpi{background:var(--card);border-radius:10px;padding:22px}
+  .kpi .n{font-size:34px;font-weight:800;color:var(--gold-l);line-height:1.1}
+  .kpi .t{font-size:14px;color:#c9d5e3;margin-top:6px}
+
+  /* section heads */
+  .sh{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+  .sh .num{color:var(--blue);font-weight:800;font-size:15px;letter-spacing:.1em}
+  .sh h2{font-size:30px;font-weight:800}
+  .intro{max-width:780px;color:#2b3a4b;font-size:17px;margin-bottom:34px}
+  .dark .sh .num{color:var(--gold-l)}
+  .dark .sh h2{color:#fff}
+  .dark .intro{color:#c9d5e3}
+
+  /* findings */
+  .finds{display:grid;gap:22px}
+  .find{background:var(--white);border-radius:10px;box-shadow:0 6px 22px rgba(11,31,54,.08);padding:26px 26px 26px 24px;border-left:5px solid var(--blue)}
+  .find.med{border-left-color:var(--gold)}
+  .find-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px}
+  .find h3{font-size:20px}
+  .tag{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:4px 10px;border-radius:20px;white-space:nowrap}
+  .tag.high{background:var(--blue);color:#fff}
+  .tag.medium{background:var(--gold);color:var(--navy)}
+  .find p{color:#33434f;margin-bottom:16px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #e1e7ee;vertical-align:top}
+  thead th{background:var(--navy);color:#fff;font-weight:600}
+  .cmp td:first-child{font-weight:600;width:28%}
+  .bad{color:var(--red)}
+  .good{color:var(--green)}
+  .tbl-scroll{overflow-x:auto}
+
+  /* flag routing diagram */
+  .route{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center}
+  .route .src{background:var(--navy);color:#fff;border-radius:8px;padding:16px;text-align:center;font-weight:700}
+  .route .src small{display:block;font-weight:400;color:#b9c7d8;font-size:13px}
+  .route .arrow{color:var(--gold);font-weight:800;font-size:22px;text-align:center}
+  .route .dests{display:grid;gap:8px}
+  .route .dest{background:var(--bg);border-left:4px solid var(--gold);border-radius:6px;padding:10px 12px;font-size:14px}
+  .route .dest b{display:block;color:var(--navy)}
+
+  /* plan */
+  .plan{background:var(--white)}
+  .tl{background:var(--navy);border-radius:12px;padding:26px;margin-bottom:34px;color:#fff}
+  .tl-head,.tl-row{display:grid;grid-template-columns:200px repeat(4,1fr);gap:6px;align-items:center}
+  .tl-head{font-size:12px;color:var(--gold-l);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:10px}
+  .tl-row{margin-bottom:10px}
+  .tl-row .nm{font-size:14px;color:#d6e0ec}
+  .bar{height:16px;background:var(--gold);border-radius:4px}
+  .bar.soft{background:rgba(200,162,74,.4)}
+  .steps{display:grid;gap:16px}
+  .step{display:grid;grid-template-columns:52px 1fr;gap:16px;background:var(--bg);border-radius:10px;padding:20px}
+  .step .s{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+  .step h3{font-size:18px;margin-bottom:4px}
+  .step .wk{font-size:12px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.08em}
+  .step p{color:#33434f;font-size:15px}
+  .step .why{margin-top:6px;font-size:14px;color:var(--green);font-weight:600}
+
+  /* sample report */
+  .report{margin-top:34px;border:1px solid #d5dee8;border-radius:10px;overflow:hidden}
+  .report-h{background:var(--navy);color:#fff;padding:16px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  .report-h span{color:var(--gold-l);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .report-b{padding:20px;display:grid;gap:16px;background:#fff}
+  .rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .rk{background:var(--bg);border-radius:8px;padding:12px}
+  .rk .v{font-size:20px;font-weight:800;color:var(--navy)}
+  .rk .l{font-size:12px;color:var(--muted)}
+  .rk .d{font-size:12px;color:var(--green);font-weight:700}
+  .rsec h4{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:6px}
+  .rsec ul{padding-left:18px;font-size:14px;color:#33434f}
+  .rsec li{margin-bottom:4px}
+  .note{font-size:13px;color:var(--muted);margin-top:4px}
+
+  /* results */
+  .dark{background:var(--navy);color:#fff}
+  .charts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .chart{background:var(--card);border-radius:10px;padding:22px}
+  .chart .big{font-size:36px;font-weight:800;color:var(--gold-l);line-height:1.1}
+  .chart .cap{font-size:14px;color:#c9d5e3;margin:6px 0 18px;min-height:44px}
+  .chart .row{margin-bottom:12px}
+  .chart .row .lbl{display:flex;justify-content:space-between;font-size:13px;color:#d6e0ec;margin-bottom:5px}
+  .chart .track{background:rgba(255,255,255,.08);border-radius:4px;height:14px}
+  .chart .fill{height:14px;border-radius:4px;background:var(--gold)}
+  .chart .fill.before{background:#5b7493}
+  .chart .src{font-size:12px;color:#9fb1c6;margin-top:10px}
+  .port{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+  .port div{border-top:3px solid var(--gold);padding-top:10px}
+  .port b{display:block;font-size:24px;color:var(--gold-l)}
+  .port span{font-size:13px;color:#c9d5e3}
+
+  /* next */
+  .nexts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .nx{background:#fff;border-top:4px solid var(--gold);border-radius:10px;padding:24px;box-shadow:0 6px 22px rgba(11,31,54,.06)}
+  .nx .k{font-size:12px;color:var(--blue);font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+  .nx h3{font-size:19px;margin:6px 0 8px}
+  .nx p{font-size:15px;color:#33434f}
+
+  /* cta */
+  .cta{background:var(--gold);padding:52px 0;text-align:center}
+  .cta h2{font-size:30px;color:var(--navy);margin-bottom:8px}
+  .cta p{color:#2a2414;margin-bottom:22px;font-size:17px}
+  .btns{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:14px 26px;border-radius:8px;font-weight:700;text-decoration:none;font-size:16px}
+  .btn.p{background:var(--navy);color:#fff}
+  .btn.s{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+
+  footer{background:var(--navy);color:#b9c7d8;padding:30px 0;font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  footer b{color:#fff}
+  footer a{color:var(--gold-l);text-decoration:none}
+
+  @media (max-width:820px){
+    .kpis,.charts,.nexts{grid-template-columns:1fr}
+    .port,.rgrid{grid-template-columns:repeat(2,1fr)}
+    .route{grid-template-columns:1fr}
+    .route .arrow{transform:rotate(90deg)}
+    .tl-head,.tl-row{grid-template-columns:110px repeat(4,1fr)}
+    .tl-row .nm{font-size:12px}
+  }
+  @media (max-width:480px){
+    section{padding:44px 0}
+    .wrap{padding:0 16px}
+    .hero h1{font-size:32px}
+    .hero .lead{font-size:17px}
+    .sh h2{font-size:24px}
+    .tl{padding:16px}
+    .tl-head,.tl-row{grid-template-columns:84px repeat(4,1fr);gap:4px}
+    .tl-head{font-size:10px}
+    .step{grid-template-columns:1fr}
+    .find{padding:20px 18px}
+    .find-head{flex-direction:column}
+    th,td{padding:8px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div><b>Usman Gull</b> &nbsp;Google Ads and SEO Specialist</div>
+      <div>usmangullpro.com</div>
+    </div>
+    <span class="label">30 day plan prepared for</span>
+    <h1>J&amp;R Marketing</h1>
+    <p class="lead">How your PPC and Meta accounts get run <span>the same way, every week, on every account</span>, with updates your account managers can forward to clients as they are.</p>
+    <div class="meta">
+      <div>Role <b>Freelance Ads Manager, PPC + Paid Social</b></div>
+      <div>Platforms <b>Google Ads, Meta</b></div>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="n">$15.5M</div><div class="t">ad spend managed across 12 years</div></div>
+      <div class="kpi"><div class="n">977</div><div class="t">total campaigns built and run</div></div>
+      <div class="kpi"><div class="n">7</div><div class="t">live Google Ads accounts run at once, 300+ phone call leads</div></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sh"><span class="num">01</span><h2>What we found</h2></div>
+    <p class="intro">Your post is not really asking for someone to run ads. It is asking for <span class="hl">consistency across a growing roster</span>: the same quality on account twelve as on account one, reports in your format, and problems flagged to the right person before a client notices them.</p>
+
+    <div class="finds">
+      <div class="find">
+        <div class="find-head"><h3>Quality drifts as the account count grows</h3><span class="tag high">High impact</span></div>
+        <p>With multiple freelancers on a roster, the usual failure is not skill. It is that each person checks different things on different days. The fix is <strong>one fixed checklist and cadence per account</strong>, so every account gets the same review whether it spends $500 or $15,000 a month.</p>
+        <div class="tbl-scroll">
+        <table class="cmp">
+          <thead><tr><th>Area</th><th>Where it usually slips</th><th>How I run it</th></tr></thead>
+          <tbody>
+            <tr><td>Budget pacing</td><td class="bad">Checked at month end, overspend found late</td><td class="good">Pacing checked twice a week against monthly cap</td></tr>
+            <tr><td>Search terms</td><td class="bad">Reviewed when results drop</td><td class="good">Weekly negative keyword pass on every Search account</td></tr>
+            <tr><td>Conversion tracking</td><td class="bad">Assumed to be working</td><td class="good">Verified on day one, re-checked after any site change</td></tr>
+            <tr><td>Meta creative</td><td class="bad">Fatigue spotted after CPL has already climbed</td><td class="good">Frequency and CTR trend flagged before it hurts</td></tr>
+            <tr><td>Updates</td><td class="bad">Different format per person</td><td class="good">Your template, same day each week, no exceptions</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="find">
+        <div class="find-head"><h3>Flags need to reach the right person, not just "the team"</h3><span class="tag high">High impact</span></div>
+        <p>You named three kinds of issues: stale creative, landing pages hurting conversion, and campaigns needing a strategy shift. Each one belongs to a different owner. <strong>Every flag I raise is routed to one owner with the evidence attached</strong>, so nobody has to ask "what do you mean".</p>
+        <div class="route">
+          <div class="src">Weekly account review<small>signal found in the data</small></div>
+          <div class="arrow">&rarr;</div>
+          <div class="dests">
+            <div class="dest"><b>Creative team</b>Ad frequency rising, CTR falling, ad set needs new assets</div>
+            <div class="dest"><b>Web / landing page team</b>Clicks steady, conversion rate dropping on one URL</div>
+            <div class="dest"><b>Account manager / media lead</b>Goal, budget or campaign type no longer fits the client</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="find med">
+        <div class="find-head"><h3>Your platform will only be as good as the workflow behind it</h3><span class="tag medium">Medium impact</span></div>
+        <p>Your DASHboard and the new internal system need clean inputs. If the ads side is documented as a repeatable routine now, it can be mapped straight into the platform later as statuses and alerts.</p>
+        <div class="tbl-scroll">
+        <table>
+          <thead><tr><th>Routine step</th><th>Frequency</th><th>Becomes in your platform</th></tr></thead>
+          <tbody>
+            <tr><td>Spend vs. budget check</td><td>Twice weekly</td><td>Pacing status: on track / over / under</td></tr>
+            <tr><td>Conversion tracking check</td><td>Weekly</td><td>Tracking health alert</td></tr>
+            <tr><td>Search term and negative review</td><td>Weekly</td><td>Task logged per account</td></tr>
+            <tr><td>Creative and landing page flags</td><td>As found</td><td>Routed ticket to owner</td></tr>
+            <tr><td>Account manager update</td><td>Weekly, fixed day</td><td>Report attached to client record</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="plan">
+  <div class="wrap">
+    <div class="sh"><span class="num">02</span><h2>The 30 day plan</h2></div>
+    <p class="intro">Start with a small set of accounts, prove the routine, then add volume. <span class="hl">The ceiling grows only when the quality holds.</span></p>
+
+    <div class="tl">
+      <div class="tl-head"><div>Workstream</div><div>Week 1</div><div>Week 2</div><div>Week 3</div><div>Week 4</div></div>
+      <div class="tl-row"><div class="nm">Access and tracking check</div><div class="bar"></div><div class="bar soft"></div><div></div><div></div></div>
+      <div class="tl-row"><div class="nm">Baseline and report format</div><div class="bar soft"></div><div class="bar"></div><div></div><div></div></div>
+      <div class="tl-row"><div class="nm">Optimization routine</div><div></div><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+      <div class="tl-row"><div class="nm">Flags to your team</div><div></div><div class="bar soft"></div><div class="bar"></div><div class="bar"></div></div>
+      <div class="tl-row"><div class="nm">Volume review</div><div></div><div></div><div></div><div class="bar"></div></div>
+    </div>
+
+    <div class="steps">
+      <div class="step"><div class="s">1</div><div><div class="wk">Week 1</div><h3>Access, audit and tracking verification</h3><p>Get access to the first accounts you assign. Check every conversion action in Google Ads, Meta pixel and CAPI events, and GA4 links. List anything broken before touching bids or budgets.</p><p class="why">Why: optimizing on wrong conversion data makes every later decision wrong.</p></div></div>
+      <div class="step"><div class="s">2</div><div><div class="wk">Week 1 to 2</div><h3>Lock your report format and cadence</h3><p>Use your template exactly. If you do not have one yet, I bring a one page weekly update (sample below) and we adjust it once, then it stays fixed.</p><p class="why">Why: account managers should never have to rewrite an update before it goes to a client.</p></div></div>
+      <div class="step"><div class="s">3</div><div><div class="wk">Week 2 to 4</div><h3>Run the same optimization routine on every account</h3><p>Pacing twice a week. Search terms and negatives weekly. Bid strategy and budget moves toward the campaigns and ad groups producing the cheapest qualified leads. Audience and creative checks on Meta.</p><p class="why">Why: a fixed routine is what keeps account twelve as clean as account one.</p></div></div>
+      <div class="step"><div class="s">4</div><div><div class="wk">Week 3 to 4</div><h3>Route flags to creative, web and media</h3><p>Each flag names the account, the metric, the trend and the owner. Urgent issues, like a tracking break or overspend, go out the same day, not in the weekly update.</p><p class="why">Why: you asked for someone who tells you when something is off. This makes it a habit, not a favor.</p></div></div>
+      <div class="step"><div class="s">5</div><div><div class="wk">Week 4</div><h3>Review volume and document the workflow for your platform</h3><p>We agree how many more accounts to add. I hand over the routine as a written checklist so your platform team can turn it into statuses and alerts.</p><p class="why">Why: your system gets built on how the work is actually done.</p></div></div>
+    </div>
+
+    <div class="report">
+      <div class="report-h"><b>Sample weekly account update</b><span>Format I send account managers</span></div>
+      <div class="report-b">
+        <div class="rgrid">
+          <div class="rk"><div class="v">69.48</div><div class="l">Conversions</div><div class="d">up from 30.50</div></div>
+          <div class="rk"><div class="v">$46.15</div><div class="l">Cost per conversion</div><div class="d">down from $99.97</div></div>
+          <div class="rk"><div class="v">6.54%</div><div class="l">Conversion rate</div><div class="d">up from 1.50%</div></div>
+          <div class="rk"><div class="v">12</div><div class="l">Confirmed bookings</div><div class="d">up from 5</div></div>
+        </div>
+        <div class="rsec"><h4>What changed</h4><ul><li>Micro conversions reclassified so bidding optimizes toward confirmed bookings</li><li>Offline conversion uploads re-established</li><li>Call conversion tracking set with minimum call duration</li></ul></div>
+        <div class="rsec"><h4>Flags for the team</h4><ul><li>Owner and action listed per item, for example: creative refresh needed on one ad group, routed to creative team</li></ul></div>
+        <div class="rsec"><h4>Next week</h4><ul><li>Two to three planned actions with the reason for each</li></ul></div>
+        <p class="note">Figures shown are from a live cosmetic surgery clinic account (month over month). The weekly version uses the same layout.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="sh"><span class="num">03</span><h2>Comparable results</h2></div>
+    <p class="intro">Results from a live US account run on the same routine described above.</p>
+    <div class="charts">
+      <div class="chart">
+        <div class="big">53.8% lower</div>
+        <div class="cap">Cost per conversion, cosmetic surgery clinic, on level ad spend</div>
+        <div class="row"><div class="lbl"><span>Before</span><span>$99.97</span></div><div class="track"><div class="fill before" style="width:100%"></div></div></div>
+        <div class="row"><div class="lbl"><span>After</span><span>$46.15</span></div><div class="track"><div class="fill" style="width:46%"></div></div></div>
+      </div>
+      <div class="chart">
+        <div class="big">+140%</div>
+        <div class="cap">Confirmed bookings after tracking rebuild and bidding toward bookings</div>
+        <div class="row"><div class="lbl"><span>Before</span><span>5</span></div><div class="track"><div class="fill before" style="width:42%"></div></div></div>
+        <div class="row"><div class="lbl"><span>After</span><span>12</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+      </div>
+      <div class="chart">
+        <div class="big">7.42x ROAS</div>
+        <div class="cap">Breast Augmentation ad group, $18,973.20 conversion value</div>
+        <div class="row"><div class="lbl"><span>Conversion rate before</span><span>1.50%</span></div><div class="track"><div class="fill before" style="width:23%"></div></div></div>
+        <div class="row"><div class="lbl"><span>Conversion rate after</span><span>6.54%</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+      </div>
+    </div>
+    <div class="port">
+      <div><b>9.2x</b><span>peak return on ad spend, medical aesthetics</span></div>
+      <div><b>488</b><span>conversions in 30 days, behavioral health</span></div>
+      <div><b>37.5%</b><span>peak conversion rate, OB-GYN</span></div>
+      <div><b>$6.45</b><span>lowest cost per lead, OB-GYN</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sh"><span class="num">04</span><h2>What happens next</h2></div>
+    <p class="intro">Three short steps to get the first accounts running.</p>
+    <div class="nexts">
+      <div class="nx"><div class="k">Step 1</div><h3>15 minute call</h3><p>You walk me through your format, cadence and how your account managers want updates. We agree a starting account count.</p></div>
+      <div class="nx"><div class="k">Step 2</div><h3>Account access</h3><p>Manager access to Google Ads and Meta Business for the first accounts, plus your report template and any client notes.</p></div>
+      <div class="nx"><div class="k">Step 3</div><h3>First week actions</h3><p>Tracking verified on every account, first update delivered in your format, and any urgent issues flagged the same day.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>Let's have a quick call</h2>
+    <p>15 minutes this week. I will walk you through this plan and how I would run your first accounts.</p>
+    <div class="btns">
+      <a class="btn p" href="mailto:sales@usmangullpro.com?subject=J%26R%20Marketing%20-%20Ads%20Manager%20call">Book a call</a>
+      <a class="btn s" href="https://usmangullpro.com">View portfolio</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><b>Usman Gull</b>, Google Ads and SEO Specialist</div>
+    <div><a href="mailto:sales@usmangullpro.com">sales@usmangullpro.com</a> &nbsp;|&nbsp; <a href="https://usmangullpro.com">usmangullpro.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
